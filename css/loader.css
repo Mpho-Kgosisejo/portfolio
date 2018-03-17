@@ -1,0 +1,142 @@
+body{
+	
+}
+
+#loader{
+	width: 150px;
+	height: 150px;
+	background: rgba(255,255,255,0.05);
+	border-radius: 50%;
+	padding: 10px;
+	border: 0px solid #666;
+}
+
+.outline, .linner-lines div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.linner-lines{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	position: absolute;
+}
+
+.inner-1{
+	border: 0px solid #000000;
+}
+
+.inner-2{
+	border: 0px solid #eee;
+}
+
+.linner-lines div{
+	
+}
+
+.linner-lines div span{
+	position: absolute;
+	width: 20%;
+	height: 20%;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.linner-lines div span.cell-1{
+	left: 40%;
+	right: 40%;
+	top: 0;
+}
+
+.linner-lines div span.cell-2{
+	left: 40%;
+	right: 40%;
+	bottom: 0;
+}
+
+.route-1{
+	transform: rotate(0deg);
+}
+
+.route-2{
+	transform: rotate(45deg);
+}
+
+.route-3{
+	transform: rotate(90deg);
+}
+
+.route-4{
+	transform: rotate(135deg);
+}
+
+.c1{
+	animation :2s linear 0s normal none infinite C1;
+}
+
+.c2{
+	animation :2s linear 0.25s normal none infinite C1;
+}
+
+.c3{
+	animation :2s linear 0.5s normal none infinite C1;
+}
+
+.c4{
+	animation :2s linear 0.75s normal none infinite C1;
+}
+
+.c5{
+	animation :2s linear 1s normal none infinite C1;
+}
+
+.c6{
+	animation :2s linear 1.25s normal none infinite C1;
+}
+
+.c7{
+	animation :2s linear 1.5s normal none infinite C1;
+}
+
+.c8{
+	animation :2s linear 1.75s normal none infinite C1;
+}
+
+@keyframes C1{
+	0%{
+		background: #ccc;
+	}
+	10%{
+		
+	}
+	20%{
+		
+	}
+	30%{
+		
+	}
+	40%{
+		
+	}
+	50%{
+		
+	}
+	60%{
+		
+	}
+	70%{
+		
+	}
+	80%{
+		
+	}
+	90%{
+		background: transparent;
+	}
+	100%{
+		background: transparent;
+	}
+}

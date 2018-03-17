@@ -1,1 +1,332 @@
-Hello world...
+<!DOCTYPE HTML>
+
+<!--
+	Author: Mpho Kgosisejo
+	
+	Technologies used:
+	Bootstrap
+	JQuery
+	Animate
+	Wow
+	Font-awesome
+	Php
+	phpMyadmin
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#22384d" />
+		<meta name="msapplication-navbutton-color" content="#22384d" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link rel="shortcut icon" sizes="192x192" href="img/icon.png"/>
+		
+        <!-- Styles -->
+		<link href="css/loader.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+		
+        <title>Mpho Kgosisejo</title>
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+    </head>
+    
+    <body onload="hideloader();" lang="en">
+		
+		<noscript>Please Enable JavaScript</noscript>
+		
+		<!--navbar-fixed-top-->
+		<nav class="navbar navbar-default navbar-fixed-top " id="nav">
+			<div class="nav-bg">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" id="togglebutton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav" aria-expanded="false">
+							
+							<span class="sr-only"></span>
+							
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<a id="link" class="home" href="#" title="Home">
+							<span class="" id="crcl"></span>
+							<img src="img/logo.png" />
+						</a>
+						
+					</div>
+					
+					<div class="collapse navbar-collapse pull-right" id="bs-nav">
+						<ul class="nav navbar-nav">
+							<li>
+								<a id="link" class="home" href="#" title="Home">Home</a>
+							</li>
+							<li>
+								<a id="link" class="projects" href="#" title="Project">Projects</a>
+							</li>
+							<li>
+								<a id="link" class="skills" href="#" title="Skills">Skills</a>
+							</li>
+							<li>
+								<a id="link" class="about" href="#" title="About">About</a>
+							</li>
+							<li id="last-link">
+								<a id="link" class="contacts" href="#" title="Contacts">Contacts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="main">
+			<div class="head" id="home">
+				
+				<div class="head-bg"></div>
+				
+				<div class="container">
+					<div class="row name fadeInDown animated">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-1"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10">
+							<h1>Mpho <span>Kgosisejo</span></h1>
+							<h4 class="wow bounceInDown animated" data-wow-delay="3s">Software, Mobile & Web Developer</h4>
+							<hr/>
+						</div>
+					</div>
+					
+					<div class="logo wow zoomIn animated" data-wow-delay="1s">
+						<img src="img/init.png"/>
+					</div>
+					
+					<div class="motto">
+						--- code with passion & motivation ---
+					</div>
+				</div>
+				
+			</div>
+			
+			<div id="fixed-flash"  class="loader-wrapper">
+				<div id="loader">
+					<div class="outline">
+						<div class="linner-lines inner-1">
+							<div class="route-1">
+								<span class="cell-1 c1"></span>
+								<span class="cell-2 c5"></span>
+							</div>
+						</div>
+						
+						<div class="linner-lines inner-2">
+							<div class="route-2">
+								<span class="cell-1 c2"></span>
+								<span class="cell-2 c6"></span>
+							</div>
+						</div>
+						
+						<div class="linner-lines inner-3">
+							<div class="route-3">
+								<span class="cell-1 c3"></span>
+								<span class="cell-2 c7"></span>
+							</div>
+						</div>
+						
+						<div class="linner-lines inner-4">
+							<div class="route-4">
+								<span class="cell-1 c4"></span>
+								<span class="cell-2 c8"></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="container warpper">
+				
+				<div class="line row" style="display: none;">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+						<hr/>
+					</div>
+				</div>
+				
+				<div class="warpper-content wow fadeInUp animated" data-wow-delay="0.4s" id="skills" style="margin-top: 10px;">
+					
+					<h3 style="margin-bottom: 10px;">Skills</h3>
+					
+					<div id="slideShow">
+						<div>
+							Java
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="45"></div>
+							</div>
+						</div>
+						<div>
+							C#
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="56"></div>
+							</div>
+						</div>
+						<div>
+							ASP.Net
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="42"></div>
+							</div>
+						</div>
+						<div>
+							Html
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="84"></div>
+							</div>
+						</div>
+						<div>
+							CSS
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="73"></div>
+							</div>
+						</div>
+						<div>
+							Php
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="67"></div>
+							</div>
+						</div>
+						<div>
+							MCV
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="55"></div>
+							</div>
+						</div>
+						<div>
+							Laravel
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="45"></div>
+							</div>
+						</div>
+						<div>
+							MsSQL
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="45"></div>
+							</div>
+						</div>
+						<div>
+							MySQL
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="60"></div>
+							</div>
+						</div>
+						<div>
+							Android
+							<div class="percent-container">
+								<div class="chart" id="graph" data-percent="35"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="line row wow fadeInUp animated" data-wow-delay="0.4s">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+						<hr/>
+					</div>
+				</div>
+				
+				<div class="warpper-content wow fadeInUp animated" data-wow-delay="0.4s" id="about">
+					
+					<h3>About</h3>
+					
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						
+						<div id="img-container">
+							<img src="img/mk-photo.jpg" alt="Mpho Kgosisejo's photo" />
+						</div>
+						
+						<h5>Biography</h5>
+						<article class="wow fadeInLeft animated" data-wow-delay="0.4s">
+							I'm a Software Developer, keen to learn more in Software & Information Technology. As a hard worker and a code writer, I loves discovering new technology for my programs' solution, functionality and experience. I learned Desktop, Mobile and Web Development in many platforms, and I have experience in database scripting languages and many scripting languages like JavaScript.
+						</article> 
+
+						<h5>Education</h5>
+						<article>
+							<div class="wow fadeInRight animated" data-wow-delay="0.4s">I studied Business and Accounting at Danville Secondary School, then went to study Software Development at Rosebank College (Pretoria Campus). I did Java, C#, HTML5, CSS3, Php, MySQL, MsSQL, Oracle Database and Android.</div>
+							<br><br>
+							<div class="wow fadeInLeft animated" data-wow-delay="0.4s">I always wanted to take a step/s forward in class, till I decided to learn more on my own. Languages/scripts I learned on the side are: ASP.Net, JavaScript (JQuery included and many more scripts), Xamarin (C#) cross-platform mobile development and Python.</div>
+						</article>
+
+						<h5>Hobbies</h5>
+						<article class="wow fadeInRight animated" data-wow-delay="0.4s">
+							Designing (Ps), photography, DJ & Music Production, playing computer games & etc.
+						</article>
+					</div>
+					
+				</div>
+			</div>
+			
+			<footer class="container-fluid" id="fluid">
+				
+				<div class="footer-bg">
+				
+					<div class="container">
+						<div class="row">
+							<div class="intro col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+								<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+									<h3>Contacts</h3>
+									<hr/>
+								</div>
+							</div>
+							
+							<div class="contacts col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" data-wow-delay="0.4s">
+								<h3 class="bold">Get in touch with me</h3>
+								<h4><a href="mailto:mpho.kgosisejo@hotmail.com">mpho.kgosisejo@hotmail.com</a></h4>
+								<h4><a>(+27) 72-146-7511 <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a></h4>
+								<h4><a>(+27) 61-290-1486</a></h4>
+								<div class="social-media">
+									<a href="https://www.facebook.com/P.Kaygo" title="Mpho Kgosisejo" id="fb">
+										<img src="img/fb-icon.png" alt="fb Social Media Icon" />
+									</a>
+									<a href="https://twitter.com/pKaygo" title="@pkaygo" id="tw">
+										<img src="img/tw-icon.png" alt="twitter Social Media Icon" />
+									</a>
+									<a href="https://za.linkedin.com/in/mpho-kgosisejo-469001125" title="Mpho Kgosisejo" id="in">
+										<img src="img/in-icon.png" alt="LinkedIn Social Media Icon" />
+									</a>
+									<a href="mailto:m.k.kaygo@gmail.com" title="m.k.kaygo@gmail.com" id="gp">
+										<img src="img/gp-icon.png" alt="Google+ Social Media Icon" />
+									</a>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+					
+					<div class="container-fluid copyrights">
+						<div class="container">
+							<div class="left wow fadeInRight animated" data-wow-delay="0.5s">
+								Copyright &copy; <?php echo date('Y'); ?> - All rights reserved.
+							</div>
+							<div class="right wow fadeInLeft animated" data-wow-delay="0.5s">
+								Designed & Developed by: <a id="link" class="about" href="#" style="color: inherit;"><b>Mpho Kgosisejo</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/request-handler.js"></script>
+    </body>
+</html>
