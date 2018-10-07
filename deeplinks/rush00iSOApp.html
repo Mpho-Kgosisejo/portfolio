@@ -8,8 +8,13 @@
     </head>
     <body>
         <script language="javascript">
-            function processDeepLink(params) {
-                document.location = "rush00app://hello-world"
+            function processDeepLink() {
+                var code = window.location.href.split("?")[1]
+                code = (code != null || code != NaN) ? code :  ""
+                var deepLink = `rush00app://${code}`
+
+                document.location = deepLink
+                console.log(deepLink)
             }
             processDeepLink()
         </script>
