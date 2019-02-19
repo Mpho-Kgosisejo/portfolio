@@ -436,6 +436,10 @@ footer .intro hr{
 	border-top: 1px solid #f5b700;
 }
 
+footer .contacts{
+	text-align: center;
+}
+
 footer .contacts, footer .form{
 	margin-top: 10px;
 }
@@ -549,6 +553,9 @@ footer .copyrights .right{
 	float: right;
 }
 
+.zero-margin{
+	margin: 0 !important;
+}
 
 @media (max-width: 480px) {
 	body{
