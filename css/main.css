@@ -384,12 +384,38 @@ body{
 	border: 1px solid #eee;
 	padding: 9px;
 	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.warpper #about #img-container #inner-img-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.25);
+	display: none;
+}
+
+.warpper #about #img-container #inner-img-container i{
+	color: red;
+}
+
+.warpper #about #img-container:hover #inner-img-container{
+	display: block;
 }
 
 .warpper #about #img-container img{
 	width: 185px;
 	height: auto;
 	border-radius: 50%;
+	transition: 0.25s ease-in-out;
+}
+
+.warpper #about #img-container:hover img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .warpper #about h5{
