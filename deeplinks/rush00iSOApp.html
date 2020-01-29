@@ -7,16 +7,31 @@
         <title>Document</title>
     </head>
     <body>
+        
+        <a onclick="deepLink('fixedLine/buy/%7B%7D')">
+            buy
+        <a/>
+            
+        <a onclick="deepLink('fixedLine/balances/%7B%7D')">
+            balances
+        <a/>
+            
+        <a onclick="deepLink('fixedLine/settings/%7B%7D')">
+            settings
+        <a/>
+            
+        <a onclick="deepLink('fixedLine/serviceRequest/%7B%7D')">
+            sr
+        <a/>
+        
+        <a onclick="deepLink('fixedLine/manage/%7B%7D')">
+            manage
+        <a/>
+        
         <script language="javascript">
-            function processDeepLink() {
-                var code = window.location.href.split("?")[1]
-                code = (code != null || code != NaN) ? code :  ""
-                var deepLink = `rush00app://${code}`
-
-                document.location = deepLink
-                console.log(deepLink)
+            function deepLink(uri) {
+                document.location = `myvodacom://${uri}`;
             }
-            processDeepLink()
         </script>
     </body>
 </html>
